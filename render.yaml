@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: lock-in-card-bot
+    env: docker
+    plan: free
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_IDS
+        sync: false
+      - key: PORT
+        value: 10000
